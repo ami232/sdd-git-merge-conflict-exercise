@@ -1,5 +1,5 @@
 """Tests for store.py — suite for 2-person groups (Features A and B only).
-
+fghfgfghsfgsdffhfvjfghfghfgh
 Each pricing rule is opt-in via its own argument (apply_discount,
 apply_tax), so these tests are independent of each other. As each
 teammate's feature lands, its test starts passing and stays passing;
