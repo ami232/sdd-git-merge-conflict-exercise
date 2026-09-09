@@ -11,6 +11,7 @@ merging someone else's feature never breaks a test that was already green.
 - test_all_features_combined passes once both features are merged and the
   conflict resolved so the rules apply in order A, then B.
 """
+hkygdfhfjyhtfjyt
 rthrtyhrfthrtyhg
 from store import calculate_total
 
