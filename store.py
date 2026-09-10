@@ -2,7 +2,10 @@
 
 TODO(team): implement the pricing rule(s) assigned to you in the README.
 """
-
+def _apply_tax(subtotal):
+    """Apply tax to the subtotal."""
+    tax_rate = 0.08  # 8% tax
+    return subtotal * (1 + tax_rate)
 
 def calculate_total(
     subtotal, apply_discount=False, apply_tax=False, apply_shipping=False
@@ -10,9 +13,8 @@ def calculate_total(
     """Calculate the final total a customer pays for their cart."""
     total = subtotal
 
-    # TODO: apply your assigned feature's pricing rule here, gated behind
-    # its argument (apply_discount, apply_tax, or apply_shipping)
-
+    if apply_tax:
+        total = _apply_tax(total)
     return total
 
 
