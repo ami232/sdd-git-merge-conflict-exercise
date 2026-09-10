@@ -20,6 +20,9 @@ def calculate_total(
     if apply_tax:
         total = total * 1.08
 
+    if apply_shipping:
+        total += 5.0  # Add $5 shipping fee
+
     return total
 
 
