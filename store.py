@@ -14,6 +14,14 @@ def calculate_total(
         if subtotal > 50:
             total = total * 0.90
 
+<<<<<<< Updated upstream
+=======
+    if apply_tax:
+        total = total * 1.08
+
+    if apply_shipping:
+        total += 5
+>>>>>>> Stashed changes
     return total
 
 
