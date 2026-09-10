@@ -17,6 +17,9 @@ def calculate_total(
         if subtotal > 50:
             total *= 0.9
 
+    if apply_shipping:
+        total += 5
+
     return total
 
 
