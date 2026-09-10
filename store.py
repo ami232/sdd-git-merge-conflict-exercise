@@ -17,6 +17,8 @@ def calculate_total(
     if apply_shipping:
         total += 5
 
+    if apply_tax:
+        total = total * 1.08
     return total
 
 
