@@ -12,7 +12,8 @@ def calculate_total(
 
     if apply_discount: #Feature A
         discount_rate = 0.1
-        total -= subtotal * discount_rate
+        if subtotal > 50:
+            total -= subtotal * discount_rate
 
     return total
 
