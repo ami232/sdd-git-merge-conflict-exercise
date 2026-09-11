@@ -10,8 +10,8 @@ def calculate_total(
     """Calculate the final total a customer pays for their cart."""
     total = subtotal
 
-    # TODO: apply your assigned feature's pricing rule here, gated behind
-    # its argument (apply_discount, apply_tax, or apply_shipping)
+    if apply_discount and subtotal >= 50:
+        total *= 0.9
 
     return total
 
